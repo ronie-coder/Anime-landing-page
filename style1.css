@@ -1,0 +1,360 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+cursor: none;
+transform-style: preserve-3d;
+perspective: 1000px;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
+background-image: url(wp5126517-hd-black-clover-anime-pc-wallpapers.jpg);
+background-repeat: no-repeat;
+filter: contrast(140%);
+background-size: cover;
+position: relative;
+
+
+    
+}
+#overlay{
+   height: 100vh;
+   width: 100vw;
+    position: fixed;
+   z-index: 30;
+   background-image: url(HEROSCREEN-naruto-and-goku.png);
+ 
+  background-size:cover;
+
+  display: flex;
+  justify-content: center;
+  cursor: default;
+  align-items: center;
+  justify-content:center;
+  translate: 0 0 50px;
+  flex-direction: column;
+  overflow: hidden;
+  
+  
+   
+}
+#overlay img{
+   scale: 0.9;
+   position: absolute;
+   top: 0;
+}
+/* #overlay_left{
+    height: 50%;
+    width: 20%;
+    padding-top: 50px;
+    margin-left: 7%;
+} */
+
+#overlay_right{
+    height:7%;
+    width: 11%;
+    
+    background-color: rgb(248, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+   scale: 0.7;
+   position: absolute;
+   bottom: 90px;
+   right: 46vw;
+}
+#overlay_right h1{
+    font-stretch: 100%;
+    font-size: 20px;
+    
+}
+#overlay_right:hover{
+   
+    box-shadow: 4px 4px ;
+    cursor: grab;
+}
+/* #overlay_right:hover{
+   
+    color: black;
+}
+#overlay_right h1:hover{
+    color: black;
+} */
+/* #overlay_left h1{
+    font-stretch: 250%;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: normal;
+    background: rgb(113,112,125);
+background: linear-gradient(90deg, rgba(113,112,125,1) 0%, rgba(212,209,233,1) 13%, rgba(255,255,255,1) 57%, rgba(184,241,224,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      
+} */
+/* #overlay h1{
+    z-index: 99;
+    color: white;
+} */
+
+
+#lower_div h5{
+    color: white;
+}
+#lower_div p{
+    color: white;
+}
+#nav_main{
+    padding: 20px;
+    display: flex;
+    height: 100px;
+    
+
+}
+#nav_first h4:hover{
+    color: red;
+}
+#sam img{
+    
+    height: 70px;
+    position: relative;
+    bottom: 5px;
+    padding-right: 124px;
+    padding-left: 30px;
+    
+    
+}
+#nav_first img:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+#nav_first{
+    padding: 13px 50px;
+    display: flex;
+    color: white;
+   
+}
+#hover1{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    /* transform: translate(-50%, -50%); */
+    transition: all linear 1;
+    left: 70px;
+    border-radius: 100%;
+   mix-blend-mode: difference;
+    top: 30px;
+    
+    opacity: 0;
+}
+#lower_div h1{
+    color: red;
+}
+#nav_second i:hover{
+color: red;
+}
+#nav_second{
+    display: flex;
+    margin-left: 70px;
+    padding: 10px 250px;
+}
+#nav_first h4{
+    font-size: 13px;
+    padding: 20px 23px;
+}
+#nav_first h4:hover{
+    
+    text-decoration-color: black;
+    
+    
+}
+#nav_second i{
+    padding: 10px 23px;
+    padding-right: 40px;
+    font-size: 18px;
+    color: white;
+}
+#nav_second i:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+#lower_div{
+    height: 600px;
+    width: 100%;
+    
+    display: flex
+}
+#left{
+    width: 35%;
+    height: 100%;
+    
+    padding-top: 8%;
+    padding-right: 90px;
+    padding-left: 100px;
+}
+#right{
+    width: 65%;
+    height: 100%;
+   
+    white-space: nowrap;
+    overflow-x: auto;
+    
+    
+}
+@keyframes cursor{
+    50% { border-color: transparent}
+}
+@keyframes typing{
+    from {width: 0}
+}
+#left h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+    border-right: 4px solid rgb(254, 252, 252);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s infinite steps(13),
+        cursor .4s step-end infinite alternate-reverse ;
+}
+#left p{
+    color: #D0D3D6;
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 20px;
+    
+}
+#left h5{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+#left button{
+    padding: 10px 37px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    font-size: 10px;
+    font-weight: 800;
+
+}
+#left button:hover{
+    background-color: red;
+    color: white;
+    cursor: none;
+    scale: 1.1;
+}
+.item{
+    height: 400px;
+    width: 270px;
+    background-color: white;
+    margin-top: 8%;
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 25px;
+    box-shadow: 0 7px 12px rgba(200, 190, 143, 0.867);
+    opacity: 0.85;
+}
+.item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+.item h4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    background-color: #D0D3D6;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: black;
+} 
+/* .item p{
+    font-size: 10px;
+    background-color: black;
+    padding: 8px;
+    color: white;
+    position: absolute;
+    bottom: 31px;
+    right: 0;
+    border-top-left-radius: 5px;
+    
+
+} */
+#right::-webkit-scrollbar{
+    display: none ;
+}
+#left h5{
+    font-size: 15px;
+}
+.item h4{
+    background-color: crimson;
+    color: white;
+}
+
+
+.cursor{
+    height:40px;
+    width: 20px;
+   scale: 1;
+    
+    position: absolute;
+    transition: all linear 0.5s;
+    pointer-events: none;
+    z-index: 9;
+    transition: all;
+    
+}
+#lowest{
+    height: 100px;
+    width: 100%;
+    
+    display: flex;
+    font-size: 3.4vw;
+   gap: 40px;
+    justify-content: center;
+    
+}
+#lowest h1{
+    -webkit-text-stroke: 1px rgb(236, 5, 5);
+    color: transparent;
+}
+#lowest1{
+    height: 100px;
+    
+}
+#sam{
+    display: inline-block;
+   
+    position: relative;
+}
+.ri-heart-3-fill{
+    color: rgb(227, 4, 41);
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 0.8;
+            transition: all ease 0.4s;
+}
